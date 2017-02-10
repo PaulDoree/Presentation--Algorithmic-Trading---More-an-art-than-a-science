@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/black.css" id="theme">
 
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- Code syntax highlighting -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
 
@@ -441,6 +442,20 @@ Reveal.addEventListener( 'customevent', function() {
         history: true,
         center: true,
 
+        //optional
+//        chalkboard: {
+//            // optionally load pre-recorded chalkboard drawing from file
+//            src: "chalkboard.json"
+//        },
+
+        chalkboard: {
+            src: null,
+            toggleChalkboardButton: { left: "100px", bottom: "30px", top: "auto", right: "auto" },
+            toggleNotesButton: true,
+            transition: 800,
+
+        },
+
         themes: [
             {name: 'Black', theme: 'css/theme/black.css'},
             {name: 'White', theme: 'css/theme/white.css'},
@@ -481,8 +496,16 @@ Reveal.addEventListener( 'customevent', function() {
             },
             {src: 'plugin/zoom-js/zoom.js', async: true},
             {src: 'plugin/notes/notes.js', async: true},
-            {src: 'node_modules/reveal.js-menu/menu.js'}
-        ]
+            {src: 'node_modules/reveal.js-menu/menu.js', async: true},
+            {src: 'plugin/chalkboard/chalkboard.js', async: true}
+        ],
+        keyboard: {
+            67: function() { RevealChalkboard.toggleNotesCanvas() },    // toggle notes canvas when 'c' is pressed
+            66: function() { RevealChalkboard.toggleChalkboard() }, // toggle chalkboard when 'b' is pressed
+            46: function() { RevealChalkboard.clear() },    // clear chalkboard when 'DEL' is pressed
+            8: function() { RevealChalkboard.reset() },    // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+            68: function() { RevealChalkboard.download() }, // downlad recorded chalkboard drawing when 'd' is pressed
+        }
     });
 
 </script>
