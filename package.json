@@ -1,22 +1,22 @@
 {
-  "name": "reveal.js",
+  "name": "Silesia JUG #13 - Algorithmic Trading - More an art than a science",
   "version": "3.4.1",
-  "description": "The HTML Presentation Framework",
-  "homepage": "http://lab.hakim.se/reveal-js",
-  "subdomain": "revealjs",
-  "main": "js/reveal.js",
+  "description": "Presentation about programming in FX trading",
+  "homepage": "http://quantfund.pl ",
+  "subdomain": "quantfund.pl",
+  "main": "quantfund.pl",
   "scripts": {
     "test": "grunt test",
     "start": "grunt serve"
   },
   "author": {
-    "name": "Hakim El Hattab",
-    "email": "hakim.elhattab@gmail.com",
-    "web": "http://hakim.se"
+    "name": "Tomasz Waszczyk",
+    "email": "quant at quantfund dot pl",
+    "web": "http://waszczyk.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hakimel/reveal.js.git"
+    "url": "https://github.com/QuantFundPL/Presentation--Algorithmic-Trading---More-an-art-than-a-science.git"
   },
   "engines": {
     "node": ">=4.0.0"
@@ -42,5 +42,5 @@
     "grunt-zip": "~0.17.1",
     "node-sass": "~3.13.0"
   },
-  "license": "MIT"
+  "license": "Copyright (c) 2017, Tomasz Waszczyk"
 }
