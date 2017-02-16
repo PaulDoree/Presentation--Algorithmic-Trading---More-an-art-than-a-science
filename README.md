@@ -14,4 +14,7 @@ http://europe.newsweek.com/hedge-funds-open-sourcing-funds-developers-tech-54319
 
 https://www.technologyreview.com/s/603431/as-goldman-embraces-automation-even-the-masters-of-the-universe-are-threatened/
 
-https://github.com/mdeverdelhan/ta4j/
+TA (Technical Analysis - Indicators) https://github.com/mdeverdelhan/ta4j/
+
+JForex Platform https://www.dukascopy.com/swiss/english/forex/dealstation/
+
