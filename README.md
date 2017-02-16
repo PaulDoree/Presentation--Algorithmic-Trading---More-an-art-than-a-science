@@ -12,7 +12,9 @@
 
 http://europe.newsweek.com/hedge-funds-open-sourcing-funds-developers-tech-543191?rm=eu
 
-https://www.technologyreview.com/s/603431/as-goldman-embraces-automation-even-the-masters-of-the-universe-are-threatened/
+https://www.technologyreview.com/s/603431/as-goldman-embraces-automation-even-the-masters-of-the-universe-are-threatened
+
+https://www.bloomberg.com/news/articles/2017-02-15/point72-shows-how-firms-face-culture-clash-on-road-to-quantland
 
 TA (Technical Analysis - Indicators) https://github.com/mdeverdelhan/ta4j/
 
