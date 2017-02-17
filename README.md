@@ -20,3 +20,7 @@ TA (Technical Analysis - Indicators) https://github.com/mdeverdelhan/ta4j/
 
 JForex Platform https://www.dukascopy.com/swiss/english/forex/dealstation/
 
+Wywiad: http://akademiaforex.com/robot-ea-nie-meczy-sie-nigdy-rozmowa-z-tomaszem-waszczykiem/
+
+Wywiad: https://comparic.pl/o-automatyzacji-handlu-slow-kilka-czyli-wywiad-z-tomaszem-waszczykiem/
+
