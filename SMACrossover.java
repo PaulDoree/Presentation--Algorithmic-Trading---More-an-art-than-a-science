@@ -26,6 +26,31 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+Each strategy must implement the IStrategy interface which contains six callback methods:
+
+onStart is called on strategy start. Here one would normally initialize variables held by IContext , 
+subscribe to feeds (e.g. custom period, range bars, renko bricks, etc.) and do other strategy setup operations.
+    
+onTick is called on every tick of every Instrument that the application is subscribed on, so for working 
+with particular instruments one should consider Tick Filtering. The method receives the latest ITick of 
+the particular Instrument from which the user can retrieve the latest ASK and BID prices, as well as the volumes. 
+Here one would implement a strategy logic which is related to price change.
+
+onBar is called when a bar is finished for every basic Period and Instrument that application is subscribed on, 
+so for working with particular instruments and periods one should consider Bar Filtering. The method receives 
+the latest BID and ASK IBar of the particular Instrument and Period from which the user can retrieve the open, 
+close, high and low prices, as well as the volume. Here one would implement a strategy logic which is related 
+to time period.
+
+onMessage is called when a new message is received. Most prominently the method receives an IMessage whenever 
+the order state of any order changes, this way allowing to Manage Order State.
+
+onAccount is called when an Account Info update is received.
+    
+onStop is called before a strategy is stopped. Here, depending on strategy logic, one would consider closing 
+all active orders, removing created chart objects, disposing any custom GUI objects, etc.
+*/
 public class SMACrossover implements IStrategy {
 
     private IEngine engine;
